@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Hải Sản Anh Vũ</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <div>
+        <div class="text-white p-2 bg-black">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="navbar-brand ml-2">Hải Sản Anh Vũ <i class="fa-solid fa-gamepad"></i></div>
+                    <div class="col-6 text-right">
+                        <vc:cart-summary />
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="row m-1 p-1">
+                    <div id="genres" class="col-3">
+                        <vc:genre-navigation />
+                    </div>
+                    <div class="col-9">
+                        @RenderBody()
+                    </div>
+
+                </div>
+            </div>
+</body>
+</html>

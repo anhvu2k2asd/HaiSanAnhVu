@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Hải Sản Anh Vũ</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <div class="bg-black text-white p-2">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+            <span class="navbar-brand ml-2">Hải Sản Anh Vũ <i class="fa-solid fa-gamepad"></i></span>
+            </a>
+    </div>
+    <div class="m-1 p-1">
+        @RenderBody()
+    </div>
+</body>
+</html>
